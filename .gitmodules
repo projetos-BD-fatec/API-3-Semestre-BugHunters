@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = git@github.com:projetos-BD-fatec/API-3-Semestre-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:projetos-BD-fatec/API-3-Semestre-frontend.git
