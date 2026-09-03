@@ -27,7 +27,4 @@ Repositório central e documentação do Projeto Integrador (API) do 3º semestr
 | Luis Gustavo | Desenvolvedor | [![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SEU-LINK-AQUI) | [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU-LINK-AQUI) |
 | João Victor | Desenvolvedor | [![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SEU-LINK-AQUI) | [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU-LINK-AQUI) |
 
-<br>
-<p align="center">feito com 💚 na fatec sjc</p>
-
 </div>
