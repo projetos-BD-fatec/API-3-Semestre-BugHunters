@@ -1,0 +1,16 @@
+services:
+  oracle-db:
+    image: gvenzl/oracle-free:slim-faststart
+    container_name: oracle-db
+    restart: unless-stopped
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=fatec_admin_123
+      - APP_USER=fatec_user
+      - APP_USER_PASSWORD=fatec_user_123
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+
+volumes:
+  oracle_data:
