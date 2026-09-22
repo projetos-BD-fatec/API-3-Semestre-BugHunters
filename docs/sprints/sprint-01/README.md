@@ -2,7 +2,7 @@
 
 **Período:** a definir
 **Meta da Sprint:** a guia é emitida e sua utilização e realização são registradas.
-**User Stories:** [US01](../../User_Stories/US01.md) a [US10](../../User_Stories/US10.md)
+**User Stories:** US01 a US10
 
 ## Definition of Ready da Sprint 1
 
