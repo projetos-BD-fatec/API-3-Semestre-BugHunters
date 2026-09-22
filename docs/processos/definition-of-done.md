@@ -1,6 +1,6 @@
 # Definition of Done (DoD)
 
-Para uma User Story ser considerada concluída, independentemente da sprint, ela deve atender:
+Critérios que uma User Story deve atender para ser considerada concluída, independentemente da sprint. Essa lista está publicada na [página inicial do repositório](../../README.md#definition-of-done-dod).
 
 - [ ] A funcionalidade está desenvolvida e integrada ao sistema.
 - [ ] Todos os critérios de aceitação foram atendidos.
