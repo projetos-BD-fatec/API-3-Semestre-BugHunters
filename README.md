@@ -1,5 +1,5 @@
-| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Instalação](#instalação) | [Estrutura](#estrutura) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Estrutura](#estrutura) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 
 # Desafio
 
@@ -87,52 +87,6 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 - [ ] O código está versionado no repositório do projeto.
 - [ ] A equipe revisou e validou a entrega.
 - [ ] A funcionalidade está pronta para ser apresentada/demonstrada.
-
-
-# Instalação
-
-**Manual de instalação**
-
-Este guia fornece as instruções necessárias para configurar e executar o projeto localmente, para desenvolvimento ou avaliação.
-
-Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados:
-
-```
-→ Java JDK 17 ou superior.
-→ Maven 3.8+ para gestão de dependências.
-→ Git (utilize o Git Bash para execução de comandos).
-→ IDE recomendada: IntelliJ IDEA.
-```
-
-> **Nota:** caso prefira não utilizar o terminal, você também pode baixar o projeto diretamente pelo GitHub: clique no botão `< > Code` e selecione `Download ZIP`.
-
-1. Abra o Git Bash e execute:
-
-```
-git clone https://github.com/<organização>/<repositório>.git
-```
-
-2. Abra a IDE:
-
-```
-Abra o IntelliJ IDEA, selecione a pasta onde o repositório foi clonado e abra a pasta projeto.
-```
-
-3. Para que a aplicação se conecte ao banco de dados externo (Supabase), navegue até a pasta `src/main/resources/`, crie um arquivo de texto chamado `db.properties` e cole a linha abaixo, substituindo os valores pelas credenciais fornecidas pela equipe:
-
-```
-db.url=jdbc:postgresql://<host>:<porta>/<banco>?user=<usuario>&password=<senha>&sslmode=require&prepareThreshold=0
-```
-
-> **Importante:** o arquivo `db.properties` contém credenciais e não é versionado (está listado no `.gitignore`).
-
-4. Execute o aplicativo, dentro da pasta `projeto`:
-
-```
-mvn clean javafx:run
-```
-
-> **Nota:** caso prefira não utilizar o terminal, você também pode executar o projeto pelo IntelliJ, abrindo a classe principal (`App`) e clicando no botão `Run`.
 
 # Estrutura
 
