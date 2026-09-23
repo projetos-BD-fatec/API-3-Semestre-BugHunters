@@ -6,6 +6,7 @@ WHENEVER SQLERROR EXIT SQL.SQLCODE
 @/sql/V1__prestador_usuario_perfil.sql
 @/sql/prestador_contato.sql
 @/sql/pre_guia.sql
+@/sql/V2__pre_guia_item.sql
 @/sql/carga_completa.sql
 EXIT
 EOF
