@@ -1,4 +1,4 @@
--- Carga inicial: PRESTADOR, USUARIO e USUARIO_PERFIL.
+-- Carga inicial: PRESTADOR, USUARIO, USUARIO_PERFIL, CATALOGO_TUSS, EXAME E EXAME_PRESTADOR.
 -- Nomes dos prestadores vieram da planilha da UG.
 -- Documento, endereco, telefone, e-mail e senha sao ficticios.
 -- Senha de todos: senha123
@@ -682,6 +682,87 @@ INSERT INTO USUARIO (ID_PRESTADOR, NM_USUARIO, DS_EMAIL,
   NR_TELEFONE, DS_SENHA_HASH) VALUES
   (NULL, 'Analista de Lisura', 'lisura@fusex.test',
    '(12) 3900-0002', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy');
+-- Usuários militares fictícios
+INSERT INTO USUARIO (
+  ID_PRESTADOR,
+  NM_USUARIO,
+  DS_EMAIL,
+  NR_PRECCP,
+  NR_TELEFONE,
+  DS_SENHA_HASH
+) VALUES (
+  NULL,
+  'Soldado João da Silva',
+  'joao.silva@militar.test',
+  '123456789',
+  '(12) 3900-3001',
+  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy'
+);
+
+INSERT INTO USUARIO (
+  ID_PRESTADOR,
+  NM_USUARIO,
+  DS_EMAIL,
+  NR_PRECCP,
+  NR_TELEFONE,
+  DS_SENHA_HASH
+) VALUES (
+  NULL,
+  'Soldado Pedro Oliveira',
+  'pedro.oliveira@militar.test',
+  '234567891',
+  '(12) 3900-3002',
+  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy'
+);
+
+INSERT INTO USUARIO (
+  ID_PRESTADOR,
+  NM_USUARIO,
+  DS_EMAIL,
+  NR_PRECCP,
+  NR_TELEFONE,
+  DS_SENHA_HASH
+) VALUES (
+  NULL,
+  'Soldado Lucas Santos',
+  'lucas.santos@militar.test',
+  '345678912',
+  '(12) 3900-3003',
+  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy'
+);
+
+INSERT INTO USUARIO (
+  ID_PRESTADOR,
+  NM_USUARIO,
+  DS_EMAIL,
+  NR_PRECCP,
+  NR_TELEFONE,
+  DS_SENHA_HASH
+) VALUES (
+  NULL,
+  'Soldado Rafael Costa',
+  'rafael.costa@militar.test',
+  '456789123',
+  '(12) 3900-3004',
+  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy'
+);
+
+INSERT INTO USUARIO (
+  ID_PRESTADOR,
+  NM_USUARIO,
+  DS_EMAIL,
+  NR_PRECCP,
+  NR_TELEFONE,
+  DS_SENHA_HASH
+) VALUES (
+  NULL,
+  'Soldado Marcos Almeida',
+  'marcos.almeida@militar.test',
+  '567891234',
+  '(12) 3900-3005',
+  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy'
+);
+
 
 INSERT INTO USUARIO_PERFIL (ID_USUARIO, CD_PERFIL)
 SELECT ID_USUARIO, 'PRESTADOR' FROM USUARIO
@@ -694,5 +775,26 @@ SELECT ID_USUARIO, 'ADMIN' FROM USUARIO
 INSERT INTO USUARIO_PERFIL (ID_USUARIO, CD_PERFIL)
 SELECT ID_USUARIO, 'LISURA' FROM USUARIO
  WHERE LOWER(DS_EMAIL) IN ('admin@fusex.test','lisura@fusex.test');
+
+INSERT INTO CATALOGO_TUSS (cod_tuss, desc_tuss, tabela_tuss, inicio_vigencia, fim_vigencia) VALUES
+    ('81000421', 'Radiografia periapical', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL),
+    ('81000430', 'Radiografia póstero-anterior', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL),
+    ('81000324', 'Radiografia antero-posterior', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL),
+    ('40801187', 'RX - Radiografia oclusal', 'TUSS-22', TO_DATE('2010-02-13', 'YYYY-MM-DD'), NULL),
+    ('81000340', 'Radiografia da ATM', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL);
+
+
+
+INSERT INTO EXAME (cod_tuss, desc_exame) VALUES
+	('81000421', 'Radiografia periapical'),
+	('81000430', 'Radiografia póstero-anterior'),
+	('81000324', 'Radiografia antero-posterior'),
+	('40801187', 'RX - Radiografia oclusal'),
+	('81000340', 'Radiografia da ATM');
+
+
+INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia)
+VALUES 
+	(1,1,250.0,'ATIVO',TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
 
 COMMIT;
