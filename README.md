@@ -1,7 +1,8 @@
 <div align="center">
 
-| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Estrutura](#estrutura) |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Estrutura](#estrutura) |[Equipe](#equipe) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
 
 </div>
 
