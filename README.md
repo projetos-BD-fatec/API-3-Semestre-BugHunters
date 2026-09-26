@@ -1,7 +1,28 @@
+# 📌 DataMed - Sua saúde, sem complicação.
+
+Este é o **repositório principal e centralizador** do projeto (Equipe BugHunters). Ele é dedicado à documentação oficial, regras de negócio, acompanhamento das Sprints (Scrum) e gestão da arquitetura baseada em submódulos.
+
+Para visualizar o código-fonte da aplicação, acesse os repositórios específicos abaixo:
+
+<div align="center">
+  <a href="https://github.com/projetos-BD-fatec/API-3-Semestre-frontend/tree/4882d27095454ebbfac9ddcaf633afac71b02307">
+    <img src="https://img.shields.io/badge/Acessar-Front--end-0077B5?style=for-the-badge&logo=github&logoColor=white" alt="Repositório Front-end">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/projetos-BD-fatec/API-3-Semestre-backend/tree/dd5c06d9c1970521aa3d2fbcd89f57b6da1b9ab5">
+    <img src="https://img.shields.io/badge/Acessar-Back--end-100000?style=for-the-badge&logo=github&logoColor=white" alt="Repositório Back-end">
+  </a>
+</div>
+<br>
+
 <div align="center">
 
-| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Estrutura](#estrutura) |[Equipe](#equipe) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+</div>
+<div align="center">
+
+| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Estrutura](#estrutura) | [Equipe](#equipe) | [Padrão de Commits](#padrão-de-commits-e-integração-jira) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
 
 </div>
@@ -130,6 +151,30 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
     │       └── README.md
     └── videos/
 ```
+
+# Padrão de Commits e Integração Jira
+
+Este projeto utiliza **Smart Commits** para rastrear e movimentar os cards automaticamente no Jira. 
+
+Todo commit deve obrigatoriamente iniciar com a chave da tarefa e seguir o formato:
+`[CHAVE-DO-JIRA] tipo: descrição breve #comando`
+
+**Tipos permitidos:**
+- `feat`: Nova funcionalidade.
+- `fix`: Correção de bug.
+- `chore`: Manutenção, dependências ou setup.
+- `docs`: Atualização de documentação.
+- `refactor`: Melhoria de código sem alterar funcionalidade.
+
+**Comandos de Automação (Status do Jira):**
+Adicione as hashtags no final da mensagem do commit para mover o card no board:
+- `#in-progress`: Move a tarefa para a coluna **Em Andamento**.
+- `#done`: Move a tarefa para **Concluído**.
+
+**Exemplos práticos de commits:**
+> `[SCRUM-12] feat: cria a tela de login do sistema #in-progress`
+> `[SCRUM-15] fix: resolve erro de cálculo na planilha de conferência #done`
+> `[SCRUM-17] docs: atualiza alinhamento da tabela de equipe no README #done`
 
 # Equipe
 
