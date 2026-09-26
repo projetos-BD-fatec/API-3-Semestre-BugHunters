@@ -176,6 +176,8 @@ Adicione as hashtags no final da mensagem do commit para mover o card no board:
 > `[SCRUM-15] fix: resolve erro de cálculo na planilha de conferência #done`
 > `[SCRUM-17] docs: atualiza alinhamento da tabela de equipe no README #done`
 
+🔗 **[Acessar o Template Padrão de Pull Request do Projeto](.github/pull_request_template.md)**
+
 # Equipe
 
 <div align="center">
