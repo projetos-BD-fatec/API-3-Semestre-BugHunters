@@ -59,7 +59,7 @@ Com isso, o sistema busca garantir:
 | [US03](docs/User_Stories/US03.md) | Consulta à Planilha de Parâmetros | Como responsável pelo FUSex, quero consultar a Planilha de Parâmetros para obter os dados necessários para o encaminhamento. | Alta | 1 | P | ✅ |
 | [US04](docs/User_Stories/US04.md) | Busca de clínicas e procedimentos | Como responsável pelo FUSex, quero consultar clínicas e procedimentos disponíveis para identificar o prestador adequado ao atendimento. | Alta | 1 | P | ✅ |
 | [US05](docs/User_Stories/US05.md) | Preparação da Pré-Guia | Como responsável pelo FUSex, quero gerar a Pré-Guia com as informações da solicitação para deixá-la pronta para emissão. | Alta | 1 | M | ✅ |
-| [US06](docs/User_Stories/US06.md) | Emissão da Guia FUSex | Como responsável pelo FUSex, quero emitir a Guia de Encaminhamento com os dados da solicitação, clínica, procedimentos e valores. | Alta | 1 | M | ⬜ |
+| [US06](docs/User_Stories/US06.md) | Emissão da Guia FUSex | Como responsável pelo FUSex, quero emitir a Guia de Encaminhamento com os dados da solicitação, clínica, procedimentos e valores. | Alta | 1 | M | 🔄 |
 | [US07](docs/User_Stories/US07.md) | Registro da utilização da Guia | Como OCS/prestador, quero informar se a Guia foi utilizada ou não para registrar a situação da Guia no sistema. | Alta | 1 | P | ⬜ |
 | [US08](docs/User_Stories/US08.md) | Assinatura da Guia | Como responsável pelo FUSex, quero registrar as assinaturas necessárias na documentação para validar o encaminhamento. | Alta | 1 | M | ⬜ |
 | [US09](docs/User_Stories/US09.md) | Consulta da Guia pelo prestador | Como clínica/prestador, quero consultar os dados da Guia para realizar o atendimento do beneficiário. | Alta | 1 | P | ⬜ |
