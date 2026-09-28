@@ -4,28 +4,10 @@ Este é o **repositório principal e centralizador** do projeto (Equipe BugHunte
 
 Para visualizar o código-fonte da aplicação, acesse os repositórios específicos abaixo:
 
-<div align="center">
-  <a href="https://github.com/projetos-BD-fatec/API-3-Semestre-frontend/tree/4882d27095454ebbfac9ddcaf633afac71b02307">
-    <img src="https://img.shields.io/badge/Acessar-Front--end-0077B5?style=for-the-badge&logo=github&logoColor=white" alt="Repositório Front-end">
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/projetos-BD-fatec/API-3-Semestre-backend/tree/dd5c06d9c1970521aa3d2fbcd89f57b6da1b9ab5">
-    <img src="https://img.shields.io/badge/Acessar-Back--end-100000?style=for-the-badge&logo=github&logoColor=white" alt="Repositório Back-end">
-  </a>
-</div>
-<br>
+[![Repositório Front-end](https://img.shields.io/badge/Acessar-Front--end-0077B5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/projetos-BD-fatec/API-3-Semestre-frontend) [![Repositório Back-end](https://img.shields.io/badge/Acessar-Back--end-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/projetos-BD-fatec/API-3-Semestre-backend)
 
-<div align="center">
-
-
-</div>
-<div align="center">
-
-| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Estrutura](#estrutura) | [Equipe](#equipe) | [Padrão de Commits](#padrão-de-commits-e-integração-jira) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-
-
-</div>
+| [Desafio](#desafio) | [Solução](#solução) | [Backlog](#backlog) | [Definition of Ready](#definition-of-ready-dor) | [Definition of Done](#definition-of-done-dod) | [Estrutura](#estrutura) | [Vídeos](#vídeos) | [Equipe](#equipe) | [Padrão de Commits](#padrão-de-commits-e-integração-jira) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
 # Desafio
 
@@ -81,7 +63,7 @@ Com isso, o sistema busca garantir:
 **Legenda das estimativas**
 
 | Tamanho | Story Points | Significado |
-| :---: | :---: | :--- |
+| :---: | :---: | --- |
 | **P** | **1 ou 2** | Tela simples ou consulta em tabelas que já existem, sem nada novo para a equipe. |
 | **M** | **3 ou 5** | Cadastro completo (tela, gravação no banco e validação) ou regra de negócio simples envolvendo 2 ou 3 tabelas. |
 | **G** | **8** | Depende de algo externo (outro sistema, arquivo, biblioteca nova) ou tem muitas regras. Se não couber em uma sprint, deve ser dividida em duas US. |
@@ -120,115 +102,80 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 **Estrutura**
 
 ```
-├── README.md
 ├── .github/
 │   └── pull_request_template.md
-├── projeto/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       └── resources/
-│   ├── .gitignore
-│   └── pom.xml
-└── docs/
-    ├── User_Stories/
-    │   ├── US01.md
-    │   ├── US02.md
-    │   ├── US03.md
-    │   ├── US04.md
-    │   ├── US05.md
-    │   ├── US06.md
-    │   ├── US07.md
-    │   ├── US08.md
-    │   ├── US09.md
-    │   └── US10.md
-    ├── imagens/
-    ├── processos/
-    │   ├── definition-of-ready.md
-    │   └── definition-of-done.md
-    ├── sprints/
-    │   └── sprint-01/
-    │       └── README.md
-    └── videos/
+├── backend/      (submódulo: API-3-Semestre-backend)
+├── docker/
+├── docs/
+│   ├── User_Stories/
+│   │   ├── US01.md
+│   │   ├── US02.md
+│   │   ├── US03.md
+│   │   ├── US04.md
+│   │   ├── US05.md
+│   │   ├── US06.md
+│   │   ├── US07.md
+│   │   ├── US08.md
+│   │   ├── US09.md
+│   │   └── US10.md
+│   ├── processos/
+│   │   ├── definition-of-ready.md
+│   │   └── definition-of-done.md
+│   ├── sprints/
+│   │   └── sprint-01/
+│   │       └── README.md
+│   └── videos/
+│       ├── README.md
+│       └── demonstracao-sprint1.mp4
+├── frontend/     (submódulo: API-3-Semestre-frontend)
+├── .gitignore
+├── .gitmodules
+└── README.md
 ```
+
+# Vídeos
+
+| Sprint | Vídeo |
+| :---: | --- |
+| Sprint 1 | [Demonstração de uso do sistema](docs/videos/demonstracao-sprint1.mp4) |
 
 # Padrão de Commits e Integração Jira
 
-Este projeto utiliza **Smart Commits** para rastrear e movimentar os cards automaticamente no Jira. 
+Este projeto utiliza **Smart Commits** para rastrear e movimentar os cards automaticamente no Jira.
 
-Todo commit deve obrigatoriamente iniciar com a chave da tarefa e seguir o formato:
-`[CHAVE-DO-JIRA] tipo: descrição breve #comando`
+Todo commit deve obrigatoriamente iniciar com a chave da tarefa e seguir o formato: `[CHAVE-DO-JIRA] tipo: descrição breve #comando`
 
 **Tipos permitidos:**
+
 - `feat`: Nova funcionalidade.
 - `fix`: Correção de bug.
 - `chore`: Manutenção, dependências ou setup.
 - `docs`: Atualização de documentação.
 - `refactor`: Melhoria de código sem alterar funcionalidade.
 
-**Comandos de Automação (Status do Jira):**
-Adicione as hashtags no final da mensagem do commit para mover o card no board:
+**Comandos de Automação (Status do Jira):** Adicione as hashtags no final da mensagem do commit para mover o card no board:
+
 - `#in-progress`: Move a tarefa para a coluna **Em Andamento**.
 - `#done`: Move a tarefa para **Concluído**.
 
 **Exemplos práticos de commits:**
+
 > `[SCRUM-12] feat: cria a tela de login do sistema #in-progress`
+>
 > `[SCRUM-15] fix: resolve erro de cálculo na planilha de conferência #done`
+>
 > `[SCRUM-17] docs: atualiza alinhamento da tabela de equipe no README #done`
 
 🔗 **[Acessar o Template Padrão de Pull Request do Projeto](.github/pull_request_template.md)**
 
 # Equipe
 
-<div align="center">
-  <table>
-    <tr>
-      <th>Membro</th>
-      <th>Função</th>
-      <th>Github</th>
-      <th>Linkedin</th>
-    </tr>
-    <tr>
-      <td align="center">Ramon Nascimento</td>
-      <td align="center">Product Owner</td>
-      <td align="center"><a href="https://github.com/Ramon-1221"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/ramon-nascimento-3bbb68249/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td align="center">Luis Gustavo Graciano</td>
-      <td align="center">Scrum Master</td>
-      <td align="center"><a href="https://github.com/gracianoluis"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/luisgustavograciano/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td align="center">Lucas Monteiro</td>
-      <td align="center">Desenvolvedor</td>
-      <td align="center"><a href="https://github.com/lhmontech"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/lucas-henrique-monteiro-55101a365"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td align="center">Melina Ito</td>
-      <td align="center">Desenvolvedor</td>
-      <td align="center"><a href="https://github.com/melinaito1"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/melinaito/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td align="center">Abraão Prado</td>
-      <td align="center">Desenvolvedor</td>
-      <td align="center"><a href="https://github.com/abraaops25"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td align="center"><a href="https://br.linkedin.com/in/abra%C3%A3o-prado-santana-830a06123"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td align="center">André Junqueira</td>
-      <td align="center">Desenvolvedor</td>
-      <td align="center"><a href="https://github.com/andre-sjunqueira"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td align="center"><a href="https://br.linkedin.com/in/andr%C3%A9-soares-junqueira-54668a26b"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td align="center">João Victor</td>
-      <td align="center">Desenvolvedor</td>
-      <td align="center"><a href="https://github.com/blom28"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td align="center"><a href="LINK_DO_JOAO_AQUI"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-  </table>
-</div>
+| Membro | Função | Github | Linkedin |
+| --- | --- | --- | --- |
+| Ramon Nascimento | Product Owner | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ramon-1221) | [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ramon-nascimento-3bbb68249/) |
+| Luis Gustavo Graciano | Scrum Master | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gracianoluis) | [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luisgustavograciano/) |
+| Lucas Monteiro | Desenvolvedor | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lhmontech) | [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-henrique-monteiro-55101a365) |
+| Melina Ito | Desenvolvedor | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/melinaito1) | [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/melinaito/) |
+| Abraão Prado | Desenvolvedor | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abraaops25) | [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/in/abra%C3%A3o-prado-santana-830a06123) |
+| André Junqueira | Desenvolvedor | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/andre-sjunqueira) | [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/in/andr%C3%A9-soares-junqueira-54668a26b) |
+| João Victor | Desenvolvedor | [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/blom28) | — |
