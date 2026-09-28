@@ -137,7 +137,9 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 
 | Sprint | Vídeo |
 | :---: | --- |
-| Sprint 1 | [Demonstração de uso do sistema](docs/videos/demonstracao-sprint1.mp4) |
+| Sprint 1 | [Assistir/baixar a demonstração de uso do sistema](https://github.com/projetos-BD-fatec/API-3-Semestre-BugHunters/raw/main/docs/videos/demonstracao-sprint1.mp4) |
+
+> O vídeo é grande demais para o GitHub exibir na página. Ao clicar no link, ele abre ou baixa direto no navegador.
 
 # Padrão de Commits e Integração Jira
 
