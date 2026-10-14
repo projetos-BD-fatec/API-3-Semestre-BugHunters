@@ -1,0 +1,25 @@
+services:
+  oracle-db:
+    image: gvenzl/oracle-free:slim-faststart
+    container_name: oracle-db
+    restart: unless-stopped
+    ports:
+      - "1521:1521"
+      - "1522:1521"
+    environment:
+      - ORACLE_PASSWORD=fatec_admin_123
+      - APP_USER=fatec_user
+      - APP_USER_PASSWORD=fatec_user_123
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      - ./docker/init:/container-entrypoint-initdb.d:ro
+      - ./docker/sql:/sql:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+volumes:
+  oracle_data:
