@@ -10,5 +10,8 @@ WHENEVER SQLERROR EXIT SQL.SQLCODE
 @/sql/V5__guia_oficial.sql
 @/sql/V6__espelho.sql
 @/sql/V7__carga_completa.sql
+@/sql/V8__carga_completa_tabela_TUSS.sql
+@/sql/V9__carga_completa_exames.sql
+@/sql/V10__carga_completa_exame_prestador.sql
 EXIT
 EOF

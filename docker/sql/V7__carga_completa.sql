@@ -776,25 +776,3 @@ INSERT INTO USUARIO_PERFIL (ID_USUARIO, CD_PERFIL)
 SELECT ID_USUARIO, 'LISURA' FROM USUARIO
  WHERE LOWER(DS_EMAIL) IN ('admin@fusex.test','lisura@fusex.test');
 
-INSERT INTO CATALOGO_TUSS (cod_tuss, desc_tuss, tabela_tuss, inicio_vigencia, fim_vigencia) VALUES
-    ('81000421', 'Radiografia periapical', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL),
-    ('81000430', 'Radiografia póstero-anterior', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL),
-    ('81000324', 'Radiografia antero-posterior', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL),
-    ('40801187', 'RX - Radiografia oclusal', 'TUSS-22', TO_DATE('2010-02-13', 'YYYY-MM-DD'), NULL),
-    ('81000340', 'Radiografia da ATM', 'TUSS-22', TO_DATE('2010-06-09', 'YYYY-MM-DD'), NULL);
-
-
-
-INSERT INTO EXAME (cod_tuss, desc_exame) VALUES
-	('81000421', 'Radiografia periapical'),
-	('81000430', 'Radiografia póstero-anterior'),
-	('81000324', 'Radiografia antero-posterior'),
-	('40801187', 'RX - Radiografia oclusal'),
-	('81000340', 'Radiografia da ATM');
-
-
-INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia)
-VALUES 
-	(1,1,250.0,'ATIVO',TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
-
-COMMIT;
