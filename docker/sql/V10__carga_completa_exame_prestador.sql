@@ -1,7 +1,4 @@
--- Relacoes ficticias EXAME_PRESTADOR para massa de teste
--- 1040 relacoes unicas: exames 1-20 x prestadores 1-52
--- Pressupoe que os IDs gerados para EXAME e PRESTADOR comecem em 1
--- Valores contratuais ficticios; ajuste conforme as regras do projeto.
+
 SET DEFINE OFF;
 
 INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia) VALUES (1, 1, 121.96, 'ATIVO', TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
@@ -1010,7 +1007,6 @@ INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, d
 INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia) VALUES (19, 50, 215.02, 'ATIVO', TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
 INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia) VALUES (19, 51, 91.51, 'ATIVO', TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
 INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia) VALUES (19, 52, 146.59, 'ATIVO', TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
-
 INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia) VALUES (20, 1, 233.22, 'ATIVO', TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
 INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia) VALUES (20, 2, 297.17, 'ATIVO', TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
 INSERT INTO EXAME_PRESTADOR (id_exame, id_prestador, valor_contratual, status, dt_inicio_vigencia, dt_fim_vigencia) VALUES (20, 3, 135.98, 'ATIVO', TO_DATE('2010-04-04', 'YYYY-MM-DD'), TO_DATE('2027-04-04', 'YYYY-MM-DD'));
