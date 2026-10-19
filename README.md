@@ -48,11 +48,11 @@ Com isso, o sistema busca garantir:
 | [US10](docs/User_Stories/US10.md) | Registro da realização | Como clínica/prestador, quero registrar a realização dos exames para que o atendimento fique registrado no sistema. | Alta | 2 | M | ⬜ |
 | [US11](docs/User_Stories/US11.md) | Envio das guias e documentos | Como clínica/prestador, quero encaminhar digitalmente as guias e os documentos da realização para iniciar o processo de faturamento. | Alta | 2 | G | ⬜ |
 | [US12](docs/User_Stories/US12.md) | Recebimento das faturas | Como responsável pelo FUSex, quero receber digitalmente as faturas enviadas pelas clínicas para dar continuidade ao processo. | Média | 2 | P | ⬜ |
-| [US13](docs/User_Stories/US13.md) | Conferência dos valores (antiga US14; já substituía as antigas US15 e US16) | Como responsável pela Lisura, quero comparar os valores apresentados com os valores previstos em contrato para identificar divergências. | Média | 2 | G | ⬜ |
-| [US14](docs/User_Stories/US14.md) | Aprovação do pagamento (antiga US17) | Como responsável pela Lisura, quero aprovar a solicitação após a conferência dos valores para autorizar o pagamento. | Média | 2 | P | ⬜ |
-| US15 | Geração do MAPA (antiga US19) | Como responsável pelo processo, quero gerar o MAPA com as informações necessárias para dar continuidade à liquidação. | Média | 3 |  | ⬜ |
-| US16 | Liquidação (antiga US20) | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 |  | ⬜ |
-| US17 | Acompanhamento do fluxo (antiga US21) | Como responsável pelo FUSex, quero acompanhar o status de cada etapa para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 |  | ⬜ |
+| [US13](docs/User_Stories/US13.md) | Conferência dos valores | Como responsável pela Lisura, quero comparar os valores apresentados com os valores previstos em contrato para identificar divergências. | Média | 2 | G | ⬜ |
+| [US14](docs/User_Stories/US14.md) | Aprovação do pagamento | Como responsável pela Lisura, quero aprovar a solicitação após a conferência dos valores para autorizar o pagamento. | Média | 2 | P | ⬜ |
+| US15 | Geração do MAPA | Como responsável pelo processo, quero gerar o MAPA com as informações necessárias para dar continuidade à liquidação. | Média | 3 |  | ⬜ |
+| US16 | Liquidação | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 |  | ⬜ |
+| US17 | Acompanhamento do fluxo | Como responsável pelo FUSex, quero acompanhar o status de cada etapa para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 |  | ⬜ |
 
 **Status:** ⬜ não iniciada · 🔄 em andamento · ✅ concluída
 
