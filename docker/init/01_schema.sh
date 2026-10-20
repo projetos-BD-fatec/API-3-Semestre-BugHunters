@@ -40,6 +40,9 @@ PROMPT === V9: exames ===
 PROMPT === V10: relacoes exame prestador ===
 @/sql/V10__carga_completa_exame_prestador.sql
 
+PROMPT === V11: revisao da lisura ===
+@/sql/V11__lisura_revisao.sql
+
 PROMPT === CONFERENCIA EXAME_PRESTADOR ===
 SELECT COUNT(*) AS TOTAL_RELACOES FROM EXAME_PRESTADOR;
 
