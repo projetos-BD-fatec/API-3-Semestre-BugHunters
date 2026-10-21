@@ -141,9 +141,7 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 
 # Padrão de Commits e Integração Jira
 
-Este projeto utiliza **Smart Commits** para rastrear e movimentar os cards automaticamente no Jira.
-
-Todo commit deve obrigatoriamente iniciar com a chave da tarefa e seguir o formato: `[CHAVE-DO-JIRA] tipo: descrição breve #comando`
+Todo commit deve obrigatoriamente iniciar com a chave da tarefa, seguida pelo tipo de trabalho sendo feito e uma breve descrição: `[CHAVE-DO-JIRA] tipo: descrição breve`
 
 **Tipos permitidos:**
 
@@ -153,18 +151,13 @@ Todo commit deve obrigatoriamente iniciar com a chave da tarefa e seguir o forma
 - `docs`: Atualização de documentação.
 - `refactor`: Melhoria de código sem alterar funcionalidade.
 
-**Comandos de Automação (Status do Jira):** Adicione as hashtags no final da mensagem do commit para mover o card no board:
-
-- `#in-progress`: Move a tarefa para a coluna **Em Andamento**.
-- `#done`: Move a tarefa para **Concluído**.
-
 **Exemplos práticos de commits:**
 
-> `[SCRUM-12] feat: cria a tela de login do sistema #in-progress`
+> `[SCRUM-12] feat: cria a tela de login do sistema`
 >
-> `[SCRUM-15] fix: resolve erro de cálculo na planilha de conferência #done`
+> `[SCRUM-15] fix: resolve erro de cálculo na planilha de conferência`
 >
-> `[SCRUM-17] docs: atualiza alinhamento da tabela de equipe no README #done`
+> `[SCRUM-17] docs: atualiza alinhamento da tabela de equipe no README`
 
 🔗 **[Acessar o Template Padrão de Pull Request do Projeto](.github/pull_request_template.md)**
 
