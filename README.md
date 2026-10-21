@@ -139,7 +139,7 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 | :---: | --- |
 | Sprint 1 | [Demonstração de uso do sistema](docs/videos/demonstracao-sprint1.mp4) |
 
-# Padrão de Commits e Integração Jira
+# Padrão de Commits
 
 Todo commit deve obrigatoriamente iniciar com a chave da tarefa, seguida pelo tipo de trabalho sendo feito e uma breve descrição: `[CHAVE-DO-JIRA] tipo: descrição breve`
 
