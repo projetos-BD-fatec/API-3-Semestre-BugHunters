@@ -1,10 +1,12 @@
 
 # Vídeos
 
-## Sprint 1: Demonstração de uso do sistema
+## Sprint 1: 
 
-[Assistir ao vídeo](demonstracao-sprint1.mp4)
+Demonstração de uso do sistema: [Assistir ao vídeo](demonstracao-sprint1.mp4)
 
-## Sprint 2: Fluxo de prestador
+## Sprint 2: 
 
-[Assistir ao vídeo](FLUXO_PRESTADOR.mp4)
+Fluxo de prestador: [Assistir ao vídeo](FLUXO_PRESTADOR.mp4)
+
+Fluxo da lisura: [Assistir ao vídeo](FLUXO_LISURA.mp4)
