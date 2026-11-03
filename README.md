@@ -65,13 +65,13 @@ cd API-3-Semestre-main
 | [US08](docs/User_Stories/US08.md) | Assinatura da Guia | Como responsável pelo FUSex, quero registrar as assinaturas necessárias na documentação para validar o encaminhamento. | Alta | 2 | M | ✅ |
 | [US09](docs/User_Stories/US09.md) | Consulta da Guia pelo prestador | Como clínica/prestador, quero consultar os dados da Guia para realizar o atendimento do beneficiário. | Alta | 2 | P | ✅ |
 | [US10](docs/User_Stories/US10.md) | Registro da realização | Como clínica/prestador, quero registrar a realização dos exames para que o atendimento fique registrado no sistema. | Alta | 2 | M | ✅ |
-| [US11](docs/User_Stories/US11.md) | Envio das guias e documentos | Como clínica/prestador, quero encaminhar digitalmente as guias e os documentos da realização para iniciar o processo de faturamento. | Alta | 2 | G | 🔄 |
-| [US12](docs/User_Stories/US12.md) | Recebimento das faturas | Como responsável pelo FUSex, quero receber digitalmente as faturas enviadas pelas clínicas para dar continuidade ao processo. | Média | 2 | P | 🔄 |
-| [US13](docs/User_Stories/US13.md) | Conferência dos valores | Como responsável pela Lisura, quero comparar os valores apresentados com os valores previstos em contrato para identificar divergências. | Média | 2 | G | 🔄 |
-| [US14](docs/User_Stories/US14.md) | Aprovação do pagamento | Como responsável pela Lisura, quero aprovar a solicitação após a conferência dos valores para autorizar o pagamento. | Média | 2 | P | 🔄 |
-| [US15](docs/User_Stories/US15.md) | Geração do MAPA | Como responsável pelo processo, quero gerar o MAPA com as informações necessárias para dar continuidade à liquidação. | Média | 3 |  | ⬜ |
-| [US16](docs/User_Stories/US16.md) | Liquidação | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 |  | ⬜ |
-| [US17](docs/User_Stories/US17.md) | Acompanhamento do fluxo | Como responsável pelo FUSex, quero acompanhar o status de cada etapa para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 |  | ⬜ |
+| [US11](docs/User_Stories/US11.md) | Envio das guias e documentos | Como clínica/prestador, quero encaminhar digitalmente as guias e os documentos da realização para iniciar o processo de faturamento. | Alta | 2 | G | ✅ |
+| [US12](docs/User_Stories/US12.md) | Recebimento das faturas | Como responsável pelo FUSex, quero receber digitalmente as faturas enviadas pelas clínicas para dar continuidade ao processo. | Média | 2 | P | ✅ |
+| [US13](docs/User_Stories/US13.md) | Conferência dos valores | Como responsável pela Lisura, quero comparar os valores apresentados com os valores previstos em contrato para identificar divergências. | Média | 2 | G | ✅ |
+| [US14](docs/User_Stories/US14.md) | Aprovação do pagamento | Como responsável pela Lisura, quero aprovar a solicitação após a conferência dos valores para autorizar o pagamento. | Média | 2 | P | ✅ |
+| [US15](docs/User_Stories/US15.md) | Geração do MAPA | Como responsável pelo processo, quero gerar o MAPA com as informações necessárias para dar continuidade à liquidação. | Média | 3 |  | 🔄 |
+| [US16](docs/User_Stories/US16.md) | Liquidação | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 |  | 🔄 |
+| [US17](docs/User_Stories/US17.md) | Acompanhamento do fluxo | Como responsável pelo FUSex, quero acompanhar o status de cada etapa para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 |  | 🔄 |
 
 **Status:** ⬜ não iniciada · 🔄 em andamento · ✅ concluída 
 
@@ -160,7 +160,8 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 | Sprint | Vídeo |
 | :---: | --- |
 | Sprint 1 | [Demonstração de uso do sistema](docs/videos/demonstracao-sprint1.mp4) |
-
+| Sprint 2 | [Demonstração do fluxo de prestador](docs/videos/FLUXO_PRESTADOR.mp4) |
+| Sprint 2 | [Demonstração do fluxo da lisura](docs/videos/FLUXO_LISURA.mp4) |
 # Gestão do Projeto & Alocação de Tarefas
 
 Para garantir total transparência no desenvolvimento e acompanhamento das atividades da equipe, todas as demandas (User Stories, Tasks e Bugs) são geridas ativamente no quadro Jira da equipe.
