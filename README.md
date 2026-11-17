@@ -70,10 +70,10 @@ cd API-3-Semestre-BugHunters
 | [US12](docs/User_Stories/US12.md) | Recebimento das faturas | Como responsável pelo FUSex, quero receber digitalmente as faturas enviadas pelas clínicas para dar continuidade ao processo. | Média | 2 | P | ✅ |
 | [US13](docs/User_Stories/US13.md) | Conferência dos valores | Como responsável pela Lisura, quero comparar os valores apresentados com os valores previstos em contrato para identificar divergências. | Média | 2 | G | ✅ |
 | [US14](docs/User_Stories/US14.md) | Aprovação do pagamento | Como responsável pela Lisura, quero aprovar a solicitação após a conferência dos valores para autorizar o pagamento. | Média | 2 | P | ✅ |
-| [US15](docs/User_Stories/US15.md) | Assinatura do beneficiário | Como beneficiário, quero assinar a guia ao realizar o exame para comprovar que o atendimento foi prestado. | Alta | 3 |  | 🔄 |
-| [US16](docs/User_Stories/US16.md) | Fechamento por competência | Como responsável pelo FUSex, quero que as guias realizadas sejam agrupadas por competência (mês) e que uma única conta seja gerada ao fim de cada mês, para conferir e pagar um valor consolidado. | Alta | 3 |  | 🔄 |
-| [US17](docs/User_Stories/US17.md) | Liquidação | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 |  | 🔄 |
-| [US18](docs/User_Stories/US18.md) | Acompanhamento do fluxo | Como responsável pelo FUSex, quero acompanhar em uma tela o fluxo completo e a etapa em que cada guia está, para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 |  | 🔄 |
+| [US15](docs/User_Stories/US15.md) | Assinatura do beneficiário | Como beneficiário, quero assinar a guia ao realizar o exame para comprovar que o atendimento foi prestado. | Alta | 3 | M | 🔄 |
+| [US16](docs/User_Stories/US16.md) | Fechamento por competência | Como responsável pelo FUSex, quero que as guias realizadas sejam agrupadas por competência (mês) e que uma única conta seja gerada ao fim de cada mês, para conferir e pagar um valor consolidado. | Alta | 3 | G | 🔄 |
+| [US17](docs/User_Stories/US17.md) | Liquidação | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 | M | 🔄 |
+| [US18](docs/User_Stories/US18.md) | Acompanhamento do fluxo | Como responsável pelo FUSex, quero acompanhar em uma tela o fluxo completo e a etapa em que cada guia está, para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 | G | 🔄 |
 
 **Status:** ⬜ não iniciada · 🔄 em andamento · ✅ concluída 
 
