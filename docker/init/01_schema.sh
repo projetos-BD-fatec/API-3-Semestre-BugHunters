@@ -56,6 +56,9 @@ PROMPT === V14: valores da liquidacao (US16) ===
 PROMPT === V15: vencimento da guia e assinatura do beneficiario ===
 @/sql/V15__guia_vencimento_assinatura.sql
 
+PROMPT === V16: Fluxo fusex ===
+@/sql/V16__fluxo_fusex.sql
+
 PROMPT === CONFERENCIA EXAME_PRESTADOR ===
 SELECT COUNT(*) AS TOTAL_RELACOES FROM EXAME_PRESTADOR;
 
