@@ -46,8 +46,15 @@ PROMPT === V11: revisao da lisura ===
 PROMPT === V12: envio de espelhos em lote ===
 @/sql/V12__espelho_envio_em_lote.sql
 
-PROMPT === V13: vencimento da guia e assinatura do beneficiario ===
-@/sql/V13__guia_vencimento_assinatura.sql
+
+PROMPT === V13: historico de status (US17) ===
+@/sql/V13__historico_status.sql
+
+PROMPT === V14: valores da liquidacao (US16) ===
+@/sql/V14__liquidacao_valores.sql
+
+PROMPT === V15: vencimento da guia e assinatura do beneficiario ===
+@/sql/V15__guia_vencimento_assinatura.sql
 
 PROMPT === CONFERENCIA EXAME_PRESTADOR ===
 SELECT COUNT(*) AS TOTAL_RELACOES FROM EXAME_PRESTADOR;

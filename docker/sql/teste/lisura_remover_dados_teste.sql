@@ -3,8 +3,9 @@
 -- =====================================================================
 --
 -- Apaga SOMENTE o que o lisura_dados_teste.sql criou: as guias com código
--- GUIA-TESTE<n> e tudo que depende delas (revisões da Lisura, itens do
--- espelho, espelho, guia oficial, itens da pré-guia e pré-guia).
+-- GUIA-TESTE<n> e tudo que depende delas (histórico de status, revisões da
+-- Lisura, itens do espelho, espelho, guia oficial, itens da pré-guia e
+-- pré-guia).
 -- Não mexe em usuários nem em senhas.
 --
 -- COMO RODAR (PowerShell, na pasta do repositório central):
@@ -22,6 +23,10 @@ BEGIN
     FOR g IN (SELECT ID_GUIA_OFICIAL, SOLICITACAO_ID
                 FROM GUIA_OFICIAL
                WHERE CODIGO_GUIA LIKE 'GUIA-TESTE%') LOOP
+
+        -- histórico de status da guia e da solicitação (US17): precisa sair
+        -- antes das tabelas que ele referencia, senão a FK barra o delete
+        DELETE FROM HISTORICO_STATUS WHERE ID_PRE_GUIA = g.SOLICITACAO_ID;
 
         -- revisões da Lisura dos itens do espelho
         DELETE FROM LISURA_REVISAO_ITEM
