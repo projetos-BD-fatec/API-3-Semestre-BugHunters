@@ -46,9 +46,10 @@ Certifique-se de ter instalado em sua máquina:
 Como o projeto utiliza submódulos do Git para versionar o Front-end e Back-end, execute o comando com a flag `--recursive`:
 
 ```bash
-git clone --recursive [https://github.com/projetos-BD-fatec/API-3-Semestre-main.git](https://github.com/projetos-BD-fatec/API-3-Semestre-main.git)
-cd API-3-Semestre-main
-````
+git clone --recursive https://github.com/projetos-BD-fatec/API-3-Semestre-BugHunters.git
+cd API-3-Semestre-BugHunters
+```
+
 # Backlog
 
 **Features**
@@ -65,13 +66,14 @@ cd API-3-Semestre-main
 | [US08](docs/User_Stories/US08.md) | Assinatura da Guia | Como responsável pelo FUSex, quero registrar as assinaturas necessárias na documentação para validar o encaminhamento. | Alta | 2 | M | ✅ |
 | [US09](docs/User_Stories/US09.md) | Consulta da Guia pelo prestador | Como clínica/prestador, quero consultar os dados da Guia para realizar o atendimento do beneficiário. | Alta | 2 | P | ✅ |
 | [US10](docs/User_Stories/US10.md) | Registro da realização | Como clínica/prestador, quero registrar a realização dos exames para que o atendimento fique registrado no sistema. | Alta | 2 | M | ✅ |
-| [US11](docs/User_Stories/US11.md) | Envio das guias e documentos | Como clínica/prestador, quero encaminhar digitalmente as guias e os documentos da realização para iniciar o processo de faturamento. | Alta | 2 | G | 🔄 |
-| [US12](docs/User_Stories/US12.md) | Recebimento das faturas | Como responsável pelo FUSex, quero receber digitalmente as faturas enviadas pelas clínicas para dar continuidade ao processo. | Média | 2 | P | 🔄 |
-| [US13](docs/User_Stories/US13.md) | Conferência dos valores | Como responsável pela Lisura, quero comparar os valores apresentados com os valores previstos em contrato para identificar divergências. | Média | 2 | G | 🔄 |
-| [US14](docs/User_Stories/US14.md) | Aprovação do pagamento | Como responsável pela Lisura, quero aprovar a solicitação após a conferência dos valores para autorizar o pagamento. | Média | 2 | P | 🔄 |
-| US15 | Geração do MAPA | Como responsável pelo processo, quero gerar o MAPA com as informações necessárias para dar continuidade à liquidação. | Média | 3 |  | ⬜ |
-| US16 | Liquidação | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 |  | ⬜ |
-| US17 | Acompanhamento do fluxo | Como responsável pelo FUSex, quero acompanhar o status de cada etapa para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 |  | ⬜ |
+| [US11](docs/User_Stories/US11.md) | Envio das guias e documentos | Como clínica/prestador, quero encaminhar digitalmente as guias e os documentos da realização para iniciar o processo de faturamento. | Alta | 2 | G | ✅ |
+| [US12](docs/User_Stories/US12.md) | Recebimento das faturas | Como responsável pelo FUSex, quero receber digitalmente as faturas enviadas pelas clínicas para dar continuidade ao processo. | Média | 2 | P | ✅ |
+| [US13](docs/User_Stories/US13.md) | Conferência dos valores | Como responsável pela Lisura, quero comparar os valores apresentados com os valores previstos em contrato para identificar divergências. | Média | 2 | G | ✅ |
+| [US14](docs/User_Stories/US14.md) | Aprovação do pagamento | Como responsável pela Lisura, quero aprovar a solicitação após a conferência dos valores para autorizar o pagamento. | Média | 2 | P | ✅ |
+| [US15](docs/User_Stories/US15.md) | Assinatura do beneficiário | Como beneficiário, quero assinar a guia ao realizar o exame para comprovar que o atendimento foi prestado. | Alta | 3 | M | 🔄 |
+| [US16](docs/User_Stories/US16.md) | Fechamento por competência | Como responsável pelo FUSex, quero que as guias realizadas sejam agrupadas por competência (mês) e que uma única conta seja gerada ao fim de cada mês, para conferir e pagar um valor consolidado. | Alta | 3 | G | 🔄 |
+| [US17](docs/User_Stories/US17.md) | Liquidação | Como responsável pelo processo, quero processar os valores aprovados para concluir a liquidação do atendimento. | Média | 3 | M | 🔄 |
+| [US18](docs/User_Stories/US18.md) | Acompanhamento do fluxo | Como responsável pelo FUSex, quero acompanhar em uma tela o fluxo completo e a etapa em que cada guia está, para ter visibilidade do processo desde a solicitação até a liquidação. | Média | 3 | G | 🔄 |
 
 **Status:** ⬜ não iniciada · 🔄 em andamento · ✅ concluída 
 
@@ -118,38 +120,45 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 
 ```
 ├── .github/
-│   └── pull_request_template.md
-├── backend/      (submódulo: API-3-Semestre-backend)
+│   └── pull_request_template.md
+├── backend/      (submódulo: API-3-Semestre-backend)
 ├── docker/
 ├── docs/
-│   ├── User_Stories/
-│   │   ├── US01.md
-│   │   ├── US02.md
-│   │   ├── US03.md
-│   │   ├── US04.md
-│   │   ├── US05.md
-│   │   ├── US06.md
-│   │   ├── US07.md
-│   │   ├── US08.md
-│   │   ├── US09.md
-│   │   ├── US10.md
-│   │   ├── US11.md
-│   │   ├── US12.md
-│   │   ├── US13.md
-│   │   └── US14.md
-│   ├── processos/
-│   │   ├── definition-of-ready.md
-│   │   └── definition-of-done.md
-│   ├── sprints/
-│   │   └── sprint-01/
-│   │       └── README.md
-│   └── videos/
-│       ├── README.md
-│       └── demonstracao-sprint1.mp4
-├── frontend/     (submódulo: API-3-Semestre-frontend)
+│   ├── User_Stories/
+│   │   ├── US01.md
+│   │   ├── US02.md
+│   │   ├── US03.md
+│   │   ├── US04.md
+│   │   ├── US05.md
+│   │   ├── US06.md
+│   │   ├── US07.md
+│   │   ├── US08.md
+│   │   ├── US09.md
+│   │   ├── US10.md
+│   │   ├── US11.md
+│   │   ├── US12.md
+│   │   ├── US13.md
+│   │   ├── US14.md
+│   │   ├── US15.md
+│   │   ├── US16.md
+│   │   ├── US17.md
+│   │   └── US18.md
+│   ├── processos/
+│   │   ├── definition-of-ready.md
+│   │   └── definition-of-done.md
+│   ├── sprints/
+│   │   └── sprint-01/
+│   │       └── README.md
+│   └── videos/
+│       ├── README.md
+│       ├── demonstracao-sprint1.mp4
+│       ├── FLUXO_PRESTADOR.mp4
+│       └── FLUXO_LISURA.mp4
+├── frontend/     (submódulo: API-3-Semestre-frontend)
 ├── .gitignore
 ├── .gitmodules
-└── README.md
+├── README.md
+└── docker-compose.yml
 ```
 
 # Vídeos
@@ -157,6 +166,8 @@ Critérios que uma User Story deve atender para ser considerada concluída, inde
 | Sprint | Vídeo |
 | :---: | --- |
 | Sprint 1 | [Demonstração de uso do sistema](docs/videos/demonstracao-sprint1.mp4) |
+| Sprint 2 | [Demonstração do fluxo de prestador](docs/videos/FLUXO_PRESTADOR.mp4) |
+| Sprint 2 | [Demonstração do fluxo da lisura](docs/videos/FLUXO_LISURA.mp4) |
 
 # Gestão do Projeto & Alocação de Tarefas
 
@@ -176,7 +187,7 @@ Para garantir total transparência no desenvolvimento e acompanhamento das ativi
 
 # Estratégia de Branching
 
-Para garantir a qualidade do código, a rastreabilidade das entregas e a integridade da aplicação, a equipe BugHunters adota um modelo baseado no Git Flow. 
+Para garantir a qualidade do código, a rastreabilidade das entregas e a integridade da aplicação, a equipe BugHunters adota um modelo baseado no Git Flow. 
 
 ⚠️ **Regra de Ouro: Commits diretos na branch `main` são estritamente proibidos.**
 
@@ -187,7 +198,7 @@ Para garantir a qualidade do código, a rastreabilidade das entregas e a integri
 - **`bugfix/SCRUM-XX-descricao-do-erro`:** Branches criadas para correção de bugs ou falhas identificadas.
 
 ### 🔄 Política de Integração (Pull Requests)
-Todo código desenvolvido nas branches de `feature` ou `bugfix` deve ser integrado à `develop` (e posteriormente à `main`) exclusivamente através de **Pull Requests (PRs)**. 
+Todo código desenvolvido nas branches de `feature` ou `bugfix` deve ser integrado à `develop` (e posteriormente à `main`) exclusivamente através de **Pull Requests (PRs)**. 
 
 Para que um PR seja aceito (Merge), ele deve:
 1. Passar na revisão de código de pelo menos 1 outro membro da equipe.
@@ -240,5 +251,5 @@ Para assegurar o engajamento, alinhamento com os prazos acadêmicos e o cumprime
 2. **Rastreabilidade no Jira e Git:** Atualizar o status dos cards no Jira e realizar commits conforme o padrão estipulado.
 3. **Respeito aos Prazos da Sprint:** Entregar os itens comprometidos na Planning dentro da Sprint correspondente. Atrasos não justificáveis serão objeto de alinhamento interno.
 4. **Critério PACER (Avaliação 360°):**
-   * O método PACER é utilizado para avaliar a contribuição individual em relação a Proatividade, Autonomia, Colaboração, Entrega e Resultados.
-   * **Membros que obtiverem nota média inferior a 1,5 (um ponto e meio) na avaliação do PACER em uma Sprint serão formalmente convidados a se desligar do grupo BugHunters.**
+   * O método PACER é utilizado para avaliar a contribuição individual em relação a Proatividade, Autonomia, Colaboração, Entrega e Resultados.
+   * **Membros que obtiverem nota média inferior a 1,5 (um ponto e meio) na avaliação do PACER em uma Sprint serão formalmente convidados a se desligar do grupo BugHunters.**

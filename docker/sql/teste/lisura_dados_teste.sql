@@ -13,8 +13,8 @@
 --   >>> Use só em banco de desenvolvimento/teste, nunca em produção.  <<<
 --
 -- PRÉ-REQUISITO
---   Banco com os scripts V1 a V11 já carregados (o V11 cria a tabela
---   LISURA_REVISAO_ITEM).
+--   Banco com os scripts V1 a V13 já carregados (o V11 cria a tabela
+--   LISURA_REVISAO_ITEM; o V13 as colunas de validade e assinatura da guia).
 --
 -- COMO RODAR (PowerShell, na pasta do repositório central, com o
 -- container oracle-db ligado — a pasta docker/sql fica montada em /sql):
@@ -131,8 +131,11 @@ BEGIN
     -- -----------------------------------------------------------------
     -- 4. Guia oficial já utilizada pela OCS
     -- -----------------------------------------------------------------
-    INSERT INTO GUIA_OFICIAL (SOLICITACAO_ID, CODIGO_GUIA, NOME_ARQUIVO, CAMINHO_ARQUIVO, STATUS)
-    VALUES (v_pre_guia, 'GUIA-TESTE' || v_pre_guia, 'teste-lisura.pdf', 'uploads/guias/teste-lisura.pdf', 'UTILIZADA')
+    -- (V13) com validade e já assinada pelo beneficiário, como no fluxo normal
+    INSERT INTO GUIA_OFICIAL (SOLICITACAO_ID, CODIGO_GUIA, NOME_ARQUIVO, CAMINHO_ARQUIVO, STATUS,
+                              DT_VALIDADE, DT_ASSINATURA, ID_USUARIO_ASSINANTE)
+    VALUES (v_pre_guia, 'GUIA-TESTE' || v_pre_guia, 'teste-lisura.pdf', 'uploads/guias/teste-lisura.pdf', 'UTILIZADA',
+            ADD_MONTHS(v_hoje, 3), SYSTIMESTAMP, v_usuario)
     RETURNING ID_GUIA_OFICIAL INTO v_guia;
 
     -- -----------------------------------------------------------------
