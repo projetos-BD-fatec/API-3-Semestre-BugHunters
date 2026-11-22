@@ -112,7 +112,7 @@ Se você já clonou sem a flag, baixe os submódulos com:
 git submodule update --init --recursive
 ```
 
-### 2. Subindo a infraestrutura (Docker)
+### 2. Subindo o banco de dados (Docker)
 
 Na raiz do repositório, suba os serviços definidos no `docker-compose.yml`:
 
@@ -120,40 +120,36 @@ Na raiz do repositório, suba os serviços definidos no `docker-compose.yml`:
 docker compose up -d
 ```
 
-### 3. Back-end
+### 3. Executando o Back-end
 
-```bash
-cd backend
+1. Abra a pasta `backend` na IDE (IntelliJ IDEA).
+2. Aguarde o carregamento das dependências do projeto.
+3. Execute a aplicação Spring Boot e aguarde a mensagem de inicialização no console.
 
-# Compilar e gerar o pacote
-./mvnw clean package
+### 4. Acessando a aplicação
 
-# Executar os testes
-./mvnw test
+Com o back-end em execução, abra o navegador e acesse:
 
-# Executar a aplicação
-./mvnw spring-boot:run
+```
+http://localhost:5501
 ```
 
-A API ficará disponível em `http://localhost:8080`.
+### 5. Atualizando o banco de dados
 
-### 4. Front-end
-
-O front-end é composto por páginas estáticas. Em outro terminal:
+Para recriar os containers e atualizar o banco (por exemplo, após baixar novas alterações do repositório), derrube e suba os serviços novamente:
 
 ```bash
-cd frontend
-npx serve .
+docker compose down
+docker compose up -d
 ```
 
-Como alternativa, abra a pasta `frontend` no VS Code e use a extensão **Live Server**.
+### 6. Encerrando
 
-### 5. Encerrando
+Pare a aplicação na IDE e derrube os containers:
 
 ```bash
 docker compose down
 ```
-
 </details>
 
 # Manual do Usuário
