@@ -240,13 +240,13 @@ Para garantir total transparência no desenvolvimento e no acompanhamento das at
 
 | Membro | Função | Tarefas / US Atribuídas | Status |
 | --- | --- | --- | :---: |
-| Ramon Nascimento | Product Owner | Validação de DoR/DoD, refinamento do Backlog e documentação | 🔄 |
-| Luis Gustavo Graciano | Scrum Master | Gestão do Kanban, Facilitação e arquitetura | 🔄 |
-| Lucas Monteiro | Desenvolvedor | A definir | 🔄 |
-| Melina Ito | Desenvolvedor | A definir | 🔄 |
-| Abraão Prado | Desenvolvedor | A definir | 🔄 |
-| André Junqueira | Desenvolvedor | A definir | 🔄 |
-| João Victor | Desenvolvedor | A definir | 🔄 |
+| Ramon Nascimento | Product Owner | Validação de DoR/DoD, refinamento do Backlog e documentação | ✅ |
+| Luis Gustavo Graciano | Scrum Master | Gestão do Kanban, Facilitação e arquitetura | ✅ |
+| Lucas Monteiro | Desenvolvedor | [US16] Guias em lote | ✅ |
+| Melina Ito | Desenvolvedor | [US18] Autorização pre guia | ✅ |
+| Abraão Prado | Desenvolvedor | [SCRUM-74] Funcionalidades no botão | ✅ |
+| André Junqueira | Desenvolvedor | [SCRUM 57] Processo de valores | ✅ |
+| João Victor | Desenvolvedor | [SCRUM 58] Status de cada etapa | ✅ |
 
 # Estratégia de Branching
 
