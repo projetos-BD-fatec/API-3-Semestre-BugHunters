@@ -38,7 +38,7 @@ Cada sprint tem sua própria página, com as User Stories entregues, o **Definit
 | :---: | :---: | :---: | --- |
 | **Sprint 1** | US01 a US05 | ✅ Concluída | [DoR, DoD e vídeo da Sprint 1](docs/sprints/sprint-01/README.md) |
 | **Sprint 2** | US06 a US14 | ✅ Concluída | [DoR, DoD e vídeos da Sprint 2](docs/sprints/sprint-02/README.md) |
-| **Sprint 3** | US15 a US18 | 🔄 Em andamento | [DoR, DoD e vídeo da Sprint 3](docs/sprints/sprint-03/README.md) |
+| **Sprint 3** | US15 a US18 | ✅ Concluída | [DoR, DoD e vídeo da Sprint 3](docs/sprints/sprint-03/README.md) |
 
 > O detalhamento do DoR de cada User Story (história, critérios de aceitação e dependências) está no arquivo dela, em [`docs/User_Stories`](docs/User_Stories).
 
