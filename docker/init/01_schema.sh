@@ -4,6 +4,9 @@ set -Eeuo pipefail
 LOG="/tmp/carga-banco.log"
 exec > >(tee -a "$LOG") 2>&1
 
+# Garante que o sqlplus leia os scripts como UTF-8 (sem isso os acentos viram lixo no banco)
+export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+
 echo "=== INICIO DA CARGA: $(date) ==="
 
 sqlplus -s -l "fatec_user/${APP_USER_PASSWORD}@localhost:1521/FREEPDB1" <<'EOF'
