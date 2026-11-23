@@ -44,4 +44,4 @@ Critérios que as User Stories devem atender para serem consideradas concluídas
 
 ## Vídeo da Sprint
 
-- 🚧 Vídeo de demonstração da Sprint 3 em produção.
+- [Demonstração da Sprint 3](../../videos/Demonstracao_Sprint3.mp4)
