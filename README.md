@@ -188,7 +188,22 @@ O sistema acompanha a guia de exame da solicitação até a liquidação. Cada p
 ├── docs/
 │   ├── User_Stories/
 │   │   ├── US01.md
-│   │   ├── ...
+│   │   ├── US02.md
+│   │   ├── US03.md
+│   │   ├── US04.md
+│   │   ├── US05.md
+│   │   ├── US06.md
+│   │   ├── US07.md
+│   │   ├── US08.md
+│   │   ├── US09.md
+│   │   ├── US10.md
+│   │   ├── US11.md
+│   │   ├── US12.md
+│   │   ├── US13.md
+│   │   ├── US14.md
+│   │   ├── US15.md
+│   │   ├── US16.md
+│   │   ├── US17.md
 │   │   └── US18.md
 │   ├── processos/
 │   │   ├── definition-of-ready.md
@@ -204,7 +219,8 @@ O sistema acompanha a guia de exame da solicitação até a liquidação. Cada p
 │       ├── README.md
 │       ├── demonstracao-sprint1.mp4
 │       ├── FLUXO_PRESTADOR.mp4
-│       └── FLUXO_LISURA.mp4
+│       ├── FLUXO_LISURA.mp4
+│       └── Demonstracao_Sprint3.mp4
 ├── frontend/     (submódulo: API-3-Semestre-frontend)
 ├── .gitignore
 ├── .gitmodules
