@@ -1,26 +1,47 @@
 # Sprint 1
 
-**Período:** a definir
-**Meta da Sprint:** a guia é emitida e sua utilização e realização são registradas.
-**User Stories:** US01 a US10
+[← Voltar ao README principal](../../../README.md)
 
-## Definition of Ready da Sprint 1
+**Status:** ✅ Concluída
 
-Aplicação do [DoR geral](../../processos/definition-of-ready.md) ao escopo desta sprint (US01 a US10):
+## User Stories da Sprint
 
-- [ ] **User Stories descritas:** a sprint cobre o fluxo desde o registro do encaminhamento médico até a realização do exame pelo prestador.
-- [ ] **Objetivo compreendido pela equipe:** ao final da sprint, uma guia deve poder ser emitida, ter sua utilização confirmada pela OCS e sua realização registrada.
-- [ ] **Critérios de aceitação definidos:** todas as US01 a US10 têm critérios de aceitação documentados em `docs/User_Stories`.
-- [ ] **Informações necessárias disponíveis:** conteúdo da Planilha de Parâmetros, lista de clínicas e dos procedimentos que cada uma realiza, exemplo de encaminhamento médico e exemplo de Guia FUSex.
-- [ ] **Dependências identificadas:** US01 → US02 → US05 → US06 → (US07, US08, US09) → US10; a US03 e a US04 alimentam a US05.
-- [ ] **Dúvidas esclarecidas com o cliente:**
-  - US03: a Planilha de Parâmetros será importada de um arquivo ou cadastrada manualmente?
-  - US06: a guia é emitida pelo nosso sistema ou pelo SIRE?
-  - US08: a assinatura é apenas o registro de quem assinou ou exige assinatura digital?
-  - US09: a clínica acessa a guia com login próprio ou pelo número da guia?
-- [ ] **User Stories priorizadas:** todas com prioridade Alta no Product Backlog.
-- [ ] **Esforço estimado:** US01 a US10 estimadas em P/M/G (ver Backlog no README).
+| Requisito | Assunto | Estimativa | Status |
+| --- | --- | :---: | :---: |
+| [US01](../../User_Stories/US01.md) | Registro do encaminhamento médico | M | ✅ |
+| [US02](../../User_Stories/US02.md) | Análise do encaminhamento | P | ✅ |
+| [US03](../../User_Stories/US03.md) | Consulta à Planilha de Parâmetros | P | ✅ |
+| [US04](../../User_Stories/US04.md) | Busca de clínicas e procedimentos | P | ✅ |
+| [US05](../../User_Stories/US05.md) | Preparação da Pré-Guia | M | ✅ |
 
-## Definition of Done
+## Definition of Ready (DoR)
 
-Ver [DoD geral](../../processos/definition-of-done.md), aplicado a cada User Story desta sprint.
+Critérios que as User Stories atenderam para entrar na Sprint:
+
+- [x] A User Story está claramente descrita.
+- [x] O objetivo da funcionalidade está compreendido pela equipe.
+- [x] Os critérios de aceitação estão bem definidos.
+- [x] As informações necessárias para o desenvolvimento estão disponíveis.
+- [x] As dependências da história estão identificadas.
+- [x] A equipe esclareceu possíveis dúvidas sobre a história.
+- [x] As User Stories foram priorizadas.
+- [x] A equipe consegue estimar o esforço necessário para desenvolvê-la.
+
+> O detalhamento do DoR de cada User Story está no arquivo dela, em [`docs/User_Stories`](../../User_Stories).
+
+## Definition of Done (DoD)
+
+Critérios que as User Stories atenderam para serem consideradas concluídas:
+
+- [x] A funcionalidade está desenvolvida e integrada ao sistema.
+- [x] Todos os critérios de aceitação foram atendidos.
+- [x] A funcionalidade foi testada.
+- [x] Os testes não apresentam erros críticos.
+- [x] A funcionalidade está funcionando conforme o fluxo definido.
+- [x] O código está versionado no repositório do projeto.
+- [x] A equipe revisou e validou a entrega.
+- [x] A funcionalidade está pronta para ser apresentada/demonstrada.
+
+## Vídeo da Sprint
+
+- [Demonstração de uso do sistema](../../videos/demonstracao-sprint1.mp4)
